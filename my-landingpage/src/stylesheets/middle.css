@@ -1,0 +1,41 @@
+.Middle {
+  text-align: center;
+  background-color: #93a2a9;
+  margin-top: -3rem;
+  background-size: cover;
+  background-position: center;
+
+  padding-bottom: 2rem;
+  opacity: 0.99;
+  transition: 10s;
+  animation: cycle 10.5s infinite;
+}
+
+@keyframes cycle {
+  0% {
+     opacity: 0.99;
+  }
+  50% {
+     opacity: 0.8;
+  }
+  75% {
+     opacity: 0.65;
+  }
+  100% {
+     opacity: 0.99;
+  }
+}
+
+@media (max-width: 768px) {
+  .Middle {
+     margin-top: -2rem;
+     padding: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Middle {
+     margin-top: 0rem;
+     padding: 3.4rem;
+  }
+}

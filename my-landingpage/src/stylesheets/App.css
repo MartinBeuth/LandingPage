@@ -1,0 +1,36 @@
+:root {
+    --common-width: 61.3%;
+ }
+ 
+ .Picture {
+    width: 100%;
+ }
+ 
+ .Top {
+    width: var(--common-width);
+ }
+ 
+ .Middle {
+    width: var(--common-width);
+ }
+ 
+ @media (max-width: 768px) {
+    .App {
+       padding: 2rem;
+    }
+ 
+    .Picture {
+       height: 200px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .App {
+       padding: 1rem;
+    }
+ 
+    .Picture {
+       height: 150px;
+    }
+ }
+ 

@@ -1,0 +1,25 @@
+.Top {
+  text-align: center;
+  background-color: #93a2a9;
+  background-size: cover;
+  background-position: center;
+
+  padding-bottom: 2rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .Top {
+     margin-top: -1rem;
+     padding: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Top {
+     margin-top: 0rem;
+     padding: 2.4rem;
+
+     width: 67.3%;
+  }
+}

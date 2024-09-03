@@ -1,0 +1,69 @@
+.vita {
+    background-size: cover;
+    background-position: center;
+ }
+ h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+ }
+ 
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.25rem;
+ }
+ 
+ th,
+ td {
+    color: #333;
+    background-color: #93a2a9;
+    border: 1px solid #93a2a9;
+    padding: 8px;
+    text-align: left;
+ }
+ 
+ tr:nth-child(even) {
+    background-color: #93a2a9;
+ }
+ 
+ th,
+ td,
+ tr {
+    font-family: "Andale Mono", monospace;
+    text-align: center;
+ }
+ ul {
+    list-style-type: none;
+ }
+ 
+ @media (max-width: 768px) {
+    h2 {
+       font-size: 2.5rem;
+    }
+ 
+    th,
+    td {
+       padding: 6px;
+    }
+ 
+    li {
+       font-size: 6px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    h2 {
+       font-size: 2rem;
+    }
+ 
+    th,
+    td {
+       padding: 6px;
+    }
+ 
+    li {
+       font-size: 6px;
+    }
+ }
+ 

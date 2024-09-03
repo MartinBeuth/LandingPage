@@ -1,0 +1,35 @@
+@keyframes walkLetters {
+  0% {
+     transform: translateX(0);
+  }
+  33% {
+     transform: translateX(20px);
+  }
+  66% {
+     transform: translateX(40px);
+  }
+  79% {
+     transform: translateX(60px);
+  }
+  89% {
+     transform: translateX(30px);
+  }
+  100% {
+     transform: translateX(0);
+  }
+}
+
+.buildingFontStyle {
+  animation: walkLetters 10.5s infinite;
+}
+
+p {
+  font-family: "Andale Mono", monospace;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 926px) {
+  p {
+     font-size: 10px;
+  }
+}

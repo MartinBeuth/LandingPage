@@ -1,0 +1,72 @@
+@keyframes subtleSoothingBackground {
+    0% {
+       background-color: #6e7a7f;
+    }
+    1% {
+       background-color: #6f7b80;
+    }
+    5% {
+       background-color: #708284;
+    }
+    10% {
+       background-color: #6f7b80;
+    }
+    15% {
+       background-color: #6e7a7f;
+    }
+    20% {
+       background-color: #6f7b80;
+    }
+    25% {
+       background-color: #708284;
+    }
+    30% {
+       background-color: #6f7b80;
+    }
+    35% {
+       background-color: #6e7a7f;
+    }
+    100% {
+       background-color: #6e7a7f;
+    }
+ }
+ 
+ @keyframes subtleSoothingBackground2 {
+    0% {
+       opacity: 1;
+    }
+    25% {
+       opacity: 0.8;
+    }
+    50% {
+       opacity: 0.6;
+    }
+    75% {
+       opacity: 0.8;
+    }
+    100% {
+       opacity: 1;
+    }
+ }
+ 
+ .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #6e7a7f;
+    width: 100%;
+    padding: 4rem;
+    animation: subtleSoothingBackground 10s ease-in-out infinite;
+ }
+ .Picture {
+    background-image: url("../assets/img/background.jpg");
+    padding-right: 1rem;
+    background-size: cover;
+    background-position: center;
+    animation: subtleSoothingBackground2 10s ease-in-out infinite;
+ 
+    width: 100%;
+ }
+ 
