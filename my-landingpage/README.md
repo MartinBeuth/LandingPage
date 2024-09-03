@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Readme
 
-## Available Scripts
+## Inhalt
 
-In the project directory, you can run:
+|  |  |
+|--|--|
+| [Ordnerstruktur](#ordnerstruktur) | [Ansatz](#ansatz) |
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Ordnerstruktur
+Die entscheidenen Ordner befinden sich alle in **src**:  
+**assets**, **cards**, **components**, **hooks**, **stylesheets**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **assets** 
 
-### `npm run build`
+Dieser Ordner enthält das Hintergrundbild, das für die Landingpage und den Musikplayer verwendet wird. Das Bild wurde von einer KI generiert.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **cards** 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Der vorliegende Ordner beinhaltet die Datei **MusicForCoding.jsx**, welche für die Funktionalität des Musikplayers verantwortlich ist. Die URL des Musikplayers wurde der Website entnommen. [https://datashat.net/](https://datashat.net/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **components** 
 
-### `npm run eject`
+Der Ordner besteht wiederum aus den Unterordnern **Top_Pages**, **NavBar**, **Middle_Pages**.  
+**Top_Pages** enthält die Dateien **Background.js** und **Ueberschrift.js**.   
+**NavBar** enthält die Datei **NavBar.js**.  
+**Middle_Pages** enthält die Dateien **Kontakt.js**, **Projekte.js** und **Vita.js**.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Hier sind also alle Dateien enthalten, die den Inhalt der Webpage bestimmen.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **hooks** 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In dem vorliegenden Ordner sind die folgenden Dateien enthalten: **useAudio.js** und **useLoading.js**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Die Verwendung der Hooks dient dem Zweck, den Ladevorgang bei den Middle_Pages vorzutäuschen. Zudem wird durch deren Einsatz die Funktionalität des Musikplayers bestimmt.
 
-## Learn More
+* **stylesheets**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Hier sind die Dateien:   
+**App.css**, **background.css**, **kontakt.css**, **loadingspinner.css**, **mediaqueries.css**, **mediaqueries2.css**, **middle.css**, **musicforcoding.css**, **navbar.css**, **picture.css**, **projekte.css**, **top.css**, **ueberschrift.css** und **vita.css**.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Die Stylesheets bestimmen das Design der namensgleichen Components und Cards.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Ansatz
+Diese React-Anwendung ist genau genommen ein Lebenslauf plus Musikplayer.  
+Die wesentlichen Konzepte, die in diesem Code zum Einsatz kommen, sind:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Router: Dieser ermöglicht die Navigation zwischen verschiedenen Komponenten.
+- useState Hook: Dieser verwaltet den Zustand der Sichtbarkeit und des Ladezustandes.
+- Custom Hook (useLoading): Dieser verwaltet den Ladezustand und bietet Funktionen zum Starten und Stoppen des Ladevorgangs.
+- setTimeout: Dieser simuliert einen asynchronen Datenabruf.
+- UI-Komponenten: components und cards.
